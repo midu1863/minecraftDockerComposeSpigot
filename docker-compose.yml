@@ -1,0 +1,13 @@
+version: "3.8"
+services:
+  spigot:
+    container_name: spigot
+    image: "nimmis/spigot" 
+    environment: 
+      - SPIGOT_VER=1.19.3
+    volumes:
+      - ./minecraft_server:/minecraft
+    ports:
+      - 25565:25565
+    
+
